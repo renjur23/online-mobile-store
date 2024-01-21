@@ -44,7 +44,7 @@
           <!-- Add more nav items here -->
         </ul>
         </ul>
-        <form class="form-inline my-2 my-lg-0" action="" method="get">
+        <form class="form-inline my-2 my-lg-0" action="{% url 'search_results' %}" method="get">
             <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
                 <i class="fas fa-search"></i> Search
@@ -58,12 +58,6 @@
       <!-- Your dynamic content goes here -->
       {% endblock content %}
     </div>
-
-    <footer class="bg-light text-center text-lg-start">
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-        © 2024 Online Mobile Store
-      </div>
-    </footer>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>

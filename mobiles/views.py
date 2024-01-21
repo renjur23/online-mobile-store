@@ -8,3 +8,14 @@ from django.db.models import Q
 class BooksListView(ListView):
     model = Mobile
     template_name = "list.html"
+
+
+class SearchResultsListView(ListView):
+    model = Mobile
+    template_name = "search_results.html"
+
+    def get_queryset(self):
+        query = self.request.GET.get("q")
+        return Mobile.objects.filter(
+            Q(name__icontains=query) | Q(manufacturer__icontains=query)
+        )
