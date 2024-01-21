@@ -1,8 +1,8 @@
 from django.urls import path
-from .views import BooksListView, SearchResultsListView
+from .views import MobileListView, SearchResultsListView
 
 
 urlpatterns = [
-    path("", BooksListView.as_view(), name="list"),
+    path("", MobileListView.as_view(), name="list"),
     path("search/", SearchResultsListView.as_view(), name="search_results"),
 ]

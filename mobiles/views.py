@@ -5,7 +5,7 @@ from django.db.models import Q
 
 
 # Create your views here.
-class BooksListView(ListView):
+class MobileListView(ListView):
     model = Mobile
     template_name = "list.html"
 
