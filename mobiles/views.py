@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic import ListView
+from django.views.generic import ListView, DetailView
 from .models import Mobile
 from django.db.models import Q
 
@@ -8,6 +8,11 @@ from django.db.models import Q
 class MobileListView(ListView):
     model = Mobile
     template_name = "list.html"
+
+
+class MobileDetailView(DetailView):
+    model = Mobile
+    template_name = "detail.html"
 
 
 class SearchResultsListView(ListView):
