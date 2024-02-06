@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import ListView, DetailView
 from .models import Mobile
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.db.models import Q
 
 
@@ -13,6 +14,12 @@ class MobileListView(ListView):
 class MobileDetailView(DetailView):
     model = Mobile
     template_name = "detail.html"
+
+
+class MobileCheckoutView(LoginRequiredMixin, DetailView):
+    model = Mobile
+    template_name = "checkout.html"
+    login_url = "login"
 
 
 class SearchResultsListView(ListView):
