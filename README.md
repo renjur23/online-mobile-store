@@ -10,8 +10,6 @@ This project was styled with html and css to Create python django
 ## Available Scripts
 In the project directory, you can run:
 
-Lets begin our project by starting our project and installing a ecommerce app, type below commands in terminal.
-
 (django_project)$django-admin startproject ecommerce_project . 
 
 (django_project)$python manage.py startapp accounts
