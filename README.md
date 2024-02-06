@@ -25,7 +25,7 @@ Now, open  vs code and locate this project directory. note that at this point dj
 
 ### make migration
 django-admin makemigrations [app_label [app_label ...]]¶
-Creates new migrations based on the changes detected to your models. Migrations, their relationship with apps and more are covered in depth in the migrations documentation
+Creates new migrations based on the changes detected to your models. 
 ### migrate
 django-admin migrate [app_label] [migration_name]¶
-Synchronizes the database state with the current set of models and migrations. Migrations, their relationship with apps and more are covered in depth in the migrations documentation.
+Synchronizes the database state with the current set of models and migrations. 
