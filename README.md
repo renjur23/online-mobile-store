@@ -19,11 +19,11 @@ Lets begin our project by starting our project and installing a ecommerce app, t
 
 Now, open  vs code and locate this project directory. note that at this point django doesnt know about this app, therefore we need to mention this app name inside our settings.py file.
 
-![home_page](home.png)
-![detail_view](detail.png)
-![Checkout_page](checkout.png)
-![login_page](login.png)
-![signup_page](signup.png)
+![home_page](read/home.JPG)
+![detail_view](read/detail.JPG)
+![Checkout_page](read/checkout.JPG)
+![login_page](read/login.JPG)
+![signup_page](read/signup.JPG)
 
 ### make migration
 django-admin makemigrations [app_label [app_label ...]]¶
